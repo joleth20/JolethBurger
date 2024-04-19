@@ -1,0 +1,14 @@
+:root{
+    --primary-white:#FFFFFF;
+    --primary-black:#000;
+    /* Theme Colors */
+    --primary-yellow: #dac404;
+    --primaryHover: #dac50480;
+    /* Font Family defaults */
+    --ffmly-default: "Roboto", sans-serif;
+}
+
+.main .products{
+    height: 100vh;
+    width: 100%;
+}
