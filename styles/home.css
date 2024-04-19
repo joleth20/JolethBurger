@@ -115,7 +115,7 @@
 .main .home .home-section{
  height: 479px;
  width: 100%;
- background: url('/assets/images/home-bg.png');
+ background: url('../assets/images/home-bg.png');
  background-size: cover;
  background-position: bottom;
  background-repeat: no-repeat;
