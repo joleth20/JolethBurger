@@ -199,14 +199,25 @@ justify-content: center;
 /* Dekstop/ */
 
 @media (max-width: 1115px) {
+
+.main .home .nav-main{
+    padding: 0px 50px;
+    }
     
     .main .home .home-section{
         padding: 0px 100px;
     }
 }
 
-
 @media (max-width: 992px) {
+
+.main .home .nav-main{
+padding: 0px 35px;
+}
+
+}
+
+@media (max-width: 925px) {
 
     .main .home .nav-main {
         border-bottom: 1px solid var(--primary-yellow);
