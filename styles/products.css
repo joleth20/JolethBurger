@@ -173,6 +173,10 @@
 
 @media (max-width: 992px) {
 
+  .main .products .products-list {
+    padding: 40px 65px;
+}
+
 }
 
 /* Tablet/Mobile Large */
