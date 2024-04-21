@@ -1,0 +1,228 @@
+:root{
+    --primary-white:#FFFFFF;
+    --primary-black:#000;
+    /* Theme Colors */
+    --primary-yellow: #dac404;
+    --primaryHover: #dac50480;
+    /* Font Family defaults */
+    --ffmly-default: "Roboto", sans-serif;
+}
+
+/* contacts */
+.main .contacts{
+    height: 100%;
+    width: 100%;
+    background-image: url("/assets/images/contacts-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 100px;
+    /* layout */
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+    justify-content: center;
+
+}
+
+.main .contacts .image-container img{
+    max-width: 479px;
+    max-height: 408px;
+    width: 100%;
+    height: auto;
+}
+
+.main .contacts .form-container{
+    height: 100%;
+    width: 545px;
+}
+
+.main .contacts .form-container h1{
+    color: var(--primary-white);
+    font-family: var(--ffmly-default);
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.main .contacts .form-container h1 span{
+    color: var(--primary-yellow);
+}
+
+
+.main .contacts .form-container .form-wrapper{
+    height: 567px;
+    width: 545px;
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.main .contacts .form-container .form-wrapper input{
+    height: 60px;
+    width: 258px;
+    background: transparent;
+    border: 1px solid var(--primaryHover);
+    padding: 1px 2px 1px 20px;
+    font-family: var(--ffmly-default);
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.main .contacts .form-container .form-wrapper input:focus{
+    color: var(--primary-white);
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.main .contacts .form-container .form-wrapper input:valid{
+    color: var(--primary-white);
+}
+
+.main .contacts .form-container .form-wrapper input::placeholder{
+    font-weight: 300;
+}
+
+.main .contacts .form-container .form-wrapper textarea{
+    height: 238px;
+    width: 545px;
+    background: transparent;
+    border: 1px solid var(--primaryHover);
+    padding: 20px 2px 2px 20px;
+    resize: none;
+}
+
+.main .contacts .form-container .form-wrapper textarea:focus{
+    color: var(--primary-white);
+    font-family: var(--ffmly-default);
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.main .contacts .form-container .form-wrapper textarea::placeholder{
+ font-family: var(--ffmly-default);
+ font-size: 21px;
+ font-weight: 300;
+}
+
+
+.main .contacts .form-container .form-wrapper button{
+    height: 60px;
+    width: 100%;
+    background-color: var(--primary-yellow);
+    border: none;
+    color: var(--primary-black);
+    font-size: 21px;
+    font-weight: 500;
+    padding: 1px 6px;
+    outline: none;
+}
+
+
+/* end contacts */
+
+/* Media Queries */
+
+/* Dekstop/ */
+
+@media (max-width: 1115px) {
+   
+}
+
+@media (max-width: 992px) {
+
+    .main .contacts{
+        column-gap: unset;
+    }
+ 
+    .main .contacts .image-container img {
+        display: none;
+    }
+
+}
+
+/* Tablet/Mobile Large */
+@media (max-width: 768px) {
+
+     
+    .main .contacts .form-container h1 {
+        font-size: 42px;
+        margin: 25px 0px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 665px) {
+
+    .main .contacts{
+        padding: 50px 45px;
+    }
+ 
+    .main .contacts .form-container h1 {
+        font-size: 42px;
+        margin: 25px 0px;
+    }
+
+    .main .contacts .form-container {
+        width: 100%;
+    }
+
+    .main .contacts .form-container .form-wrapper {
+        height: 100%;
+        width: 100%;
+        row-gap: 30px;
+    }
+
+    .main .contacts .form-container .form-wrapper input{
+        width: 100%;
+    }
+
+    .main .contacts .form-container .form-wrapper textarea{
+        width: 100%;
+    }
+
+}
+
+/* Small mobile */
+
+@media (max-width: 550px) {
+
+    .main .contacts{
+        padding: 50px 40px;
+    }
+ 
+
+    .main .contacts .form-container h1 {
+        font-size: 35px;
+        margin: 25px 0px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .main .contacts .form-container h1 {
+        font-size: 32px;
+        margin: 25px 0px;
+    }
+}
+
+@media (max-width: 385px) {
+
+    .main .contacts .form-container h1 {
+        font-size: 25px;
+        margin: 25px 0px;
+    }
+}
+
+@media (max-width: 310px) {
+
+    
+    .main .contacts .form-container h1 {
+        font-size: 20px;
+        margin: 25px 0px;
+    }
+
+}
