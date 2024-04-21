@@ -4,6 +4,7 @@
     /* Theme Colors */
     --primary-yellow: #dac404;
     --primaryHover: #dac50480;
+    --invalid:#ff0000;
     /* Font Family defaults */
     --ffmly-default: "Roboto", sans-serif;
 }
@@ -69,6 +70,7 @@
     font-family: var(--ffmly-default);
     font-size: 21px;
     font-weight: 300;
+    outline: none;
 }
 
 .main .contacts .form-container .form-wrapper input:focus{
@@ -81,6 +83,11 @@
     color: var(--primary-white);
 }
 
+.main .contacts .form-container .form-wrapper input:focus:invalid{
+    border:1px solid var(--invalid);
+}
+
+
 .main .contacts .form-container .form-wrapper input::placeholder{
     font-weight: 300;
 }
@@ -92,6 +99,7 @@
     border: 1px solid var(--primaryHover);
     padding: 20px 2px 2px 20px;
     resize: none;
+    outline: none;
 }
 
 .main .contacts .form-container .form-wrapper textarea:focus{
@@ -114,6 +122,7 @@
     background-color: var(--primary-yellow);
     border: none;
     color: var(--primary-black);
+    cursor: pointer;
     font-size: 21px;
     font-weight: 500;
     padding: 1px 6px;
